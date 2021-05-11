@@ -1,0 +1,7 @@
+{
+  "name": "use-api",
+  "private": "true",
+  "workspaces": [
+    "./packages/**"
+  ]
+}

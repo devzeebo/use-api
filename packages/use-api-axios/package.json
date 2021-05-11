@@ -1,0 +1,27 @@
+{
+  "name": "@use-api/axios",
+  "version": "0.0.1",
+  "description": "Access APIs using hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devzeebo/use-api.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "api",
+    "axios",
+    "fetch"
+  ],
+  "author": "Eric Siebeneich <eric.siebeneich@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devzeebo/use-api/issues"
+  },
+  "homepage": "https://github.com/devzeebo/use-api#readme",
+  "dependencies": {}
+}
