@@ -10,8 +10,8 @@
     "prepare": "npm run clean",
     "clean": "rimraf ./packages/**/node_modules",
     "build": "npm run --workspaces build",
-    "install": "npm install",
     "build:all": "run-s clean build",
+    "ncu": "npm run --workspaces ncu",
     "example": "npm run --workspace=@use-api/examples start"
   },
   "devDependencies": {
