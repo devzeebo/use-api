@@ -2,9 +2,11 @@
   "name": "@use-api/core",
   "version": "0.0.1",
   "description": "Access APIs using hooks",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc --project ./tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "react": "^16.8.0 || ^17.0.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.168",
     "@types/react": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",

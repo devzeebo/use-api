@@ -1,8 +1,15 @@
 {
-    "extends": "./tsconfig.json",
-    "include": [
-        "./**/src",
-        "./**/.eslintrc.js",
-        "./**/*.json"
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": [
+      "ESNext",
+      "DOM"
     ]
+  },
+  "include": [
+    "./**/src",
+    "./**/.eslintrc.js",
+    "./**/*.json",
+    "./**/*.js"
+  ]
 }

@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "../"
+    },
+    {
+      "name": "examples",
+      "path": "../packages/examples"
+    },
+    {
+      "name": "use-api",
+      "path": "../packages/use-api"
+    },
+    {
+      "name": "use-api-axios",
+      "path": "../packages/use-api-axios"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      // "node_modules/": true,
+      "packages/": true,
+    }
+  }
+}

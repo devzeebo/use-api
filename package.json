@@ -2,6 +2,20 @@
   "name": "use-api",
   "private": "true",
   "workspaces": [
-    "./packages/**"
-  ]
+    "./packages/use-api",
+    "./packages/**",
+    "./packages/examples"
+  ],
+  "scripts": {
+    "prepare": "npm run clean",
+    "clean": "rimraf ./packages/**/node_modules",
+    "build": "npm run --workspaces build",
+    "install": "npm install",
+    "build:all": "run-s clean build",
+    "example": "npm run --workspace=@use-api/examples start"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
 }

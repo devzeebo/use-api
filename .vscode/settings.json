@@ -1,0 +1,4 @@
+{
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "editor.tabSize": 2
+}

@@ -2,9 +2,11 @@
   "name": "@use-api/axios",
   "version": "0.0.1",
   "description": "Access APIs using hooks",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc --project tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,15 @@
     "url": "https://github.com/devzeebo/use-api/issues"
   },
   "homepage": "https://github.com/devzeebo/use-api#readme",
-  "dependencies": {}
+  "peerDependencies": {
+    "axios": "^0.21.0",
+    "react": "^16.8.0 || ^17.0.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^0.21.1"
+  },
+  "dependencies": {
+    "@use-api/core": "^0.0.1"
+  }
 }
