@@ -5,11 +5,14 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "files": [
-    "lib/*"
+    "lib",
+    "src"
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc --project tsconfig.json",
+    "clean": "rimraf lib",
+    "build": "tsc --project ./tsconfig.json",
+    "prepublishOnly": "run-s clean build",
     "build:watch": "tsc --project ./tsconfig.json --watch --preserveWatchOutput --pretty"
   },
   "repository": {
@@ -40,5 +43,8 @@
   },
   "dependencies": {
     "@use-api/core": "^0.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
