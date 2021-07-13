@@ -7,15 +7,15 @@ import {
 } from '../../types/Middleware';
 import reduceMiddlewares from './_reduceMiddlewareConfig';
 
-export type UseApiCallback<T, TData> = (config: T) => Promise<TData>;
+export type UseApiCallback<T, TData> = (config?: T) => Promise<TData>;
 
 export default <T, TData>(
   handler: (config: T) => Promise<TData>,
   baseConfig: T,
-  middleware: Middleware<T>[],
+  middleware: Middleware<T>[] = [],
 ): UseApiCallback<T, TData> => {
   const callback = useCallback(
-    (requestConfig: T) => {
+    (requestConfig?: T) => {
       const mergedConfig = mergeAll([
         baseConfig,
         requestConfig,

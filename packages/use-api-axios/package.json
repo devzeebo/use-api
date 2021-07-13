@@ -6,7 +6,8 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc --project tsconfig.json"
+    "build": "tsc --project tsconfig.json",
+    "build:watch": "tsc --project ./tsconfig.json --watch --preserveWatchOutput --pretty"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,8 @@
   },
   "homepage": "https://github.com/devzeebo/use-api#readme",
   "peerDependencies": {
-    "axios": "^0.21.1",
-    "react": "^16.7.0 || ^17.0.0"
+    "axios": "^0.21.0",
+    "react": "^16.8.0 || ^17.0.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",

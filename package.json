@@ -9,7 +9,10 @@
   "scripts": {
     "prepare": "npm run clean",
     "clean": "rimraf ./packages/**/node_modules",
-    "build": "npm run --workspaces build",
+    "build": "npm run -w=@use-api/core -w=@use-api/axios build",
+    "build:watch:core": "npm run -w=@use-api/core build:watch",
+    "build:watch:axios": "npm run -w=@use-api/axios build:watch",
+    "build:watch": "run-p build:watch:core build:watch:axios",
     "build:all": "run-s clean build",
     "ncu": "npm run --workspaces ncu",
     "example": "npm run --workspace=@use-api/examples start"

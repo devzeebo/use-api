@@ -1,5 +1,11 @@
-import { useApiCallback } from '@use-api/core';
-import axios from 'axios';
+import {
+  useApiCallback,
+  Middleware,
+} from '@use-api/core';
+import axios, {
+  AxiosRequestConfig,
+} from 'axios';
 
-// eslint-disable-next-line react-hooks/rules-of-hooks
-export default useApiCallback(axios.request);
+export default (baseConfig: AxiosRequestConfig, middlewares?: Middleware<AxiosRequestConfig>[]) => (
+  useApiCallback(axios.request, baseConfig, middlewares)
+);
